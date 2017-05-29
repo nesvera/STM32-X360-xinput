@@ -1,0 +1,227 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: dani Microsoft, Microsoft, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+C:\Users\nesvera\Desktop\STM32-XINPUT-X360\MDK-ARM\stm32_xinput.uvprojx
+Project File Date:  05/28/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'stm32_xinput'
+compiling usbd_custom_hid_if.c...
+compiling stm32f1xx_hal_msp.c...
+compiling usbd_conf.c...
+compiling stm32f1xx_it.c...
+compiling usbd_desc.c...
+compiling usb_device.c...
+../Src/usb_device.c(56): warning:  #177-D: variable "hhid"  was declared but never referenced
+  	USBD_CUSTOM_HID_HandleTypeDef *hhid = (USBD_CUSTOM_HID_HandleTypeDef*)hUsbDeviceFS.pClassData;
+../Src/usb_device.c: 1 warning, 0 errors
+compiling usb_xinput.c...
+compiling main.c...
+..\Src\stm32_xinput\stm32_xinput.h(59): warning:  #1295-D: Deprecated declaration declareButtonPins - give arg types
+  void declareButtonPins();
+..\Src\stm32_xinput\stm32_xinput.h(60): warning:  #1295-D: Deprecated declaration declareAnalogPins - give arg types
+  void declareAnalogPins();
+..\Src\stm32_xinput\stm32_xinput.h(61): warning:  #1295-D: Deprecated declaration declareEncoderPins - give arg types
+  void declareEncoderPins();
+..\Src\stm32_xinput\stm32_xinput.h(63): warning:  #1295-D: Deprecated declaration readButtons - give arg types
+  void readButtons();
+..\Src\stm32_xinput\stm32_xinput.h(64): warning:  #1295-D: Deprecated declaration updateTriggers - give arg types
+  void updateTriggers();
+..\Src\stm32_xinput\stm32_xinput.h(65): warning:  #1295-D: Deprecated declaration updateSticks - give arg types
+  void updateSticks();
+..\Src\stm32_xinput\stm32_xinput.h(66): warning:  #1295-D: Deprecated declaration readAdcValues - give arg types
+  void readAdcValues();
+../Src/main.c: 7 warnings, 0 errors
+compiling xinput.c...
+..\Src\stm32_xinput\stm32_xinput.h(59): warning:  #1295-D: Deprecated declaration declareButtonPins - give arg types
+  void declareButtonPins();
+..\Src\stm32_xinput\stm32_xinput.h(60): warning:  #1295-D: Deprecated declaration declareAnalogPins - give arg types
+  void declareAnalogPins();
+..\Src\stm32_xinput\stm32_xinput.h(61): warning:  #1295-D: Deprecated declaration declareEncoderPins - give arg types
+  void declareEncoderPins();
+..\Src\stm32_xinput\stm32_xinput.h(63): warning:  #1295-D: Deprecated declaration readButtons - give arg types
+  void readButtons();
+..\Src\stm32_xinput\stm32_xinput.h(64): warning:  #1295-D: Deprecated declaration updateTriggers - give arg types
+  void updateTriggers();
+..\Src\stm32_xinput\stm32_xinput.h(65): warning:  #1295-D: Deprecated declaration updateSticks - give arg types
+  void updateSticks();
+..\Src\stm32_xinput\stm32_xinput.h(66): warning:  #1295-D: Deprecated declaration readAdcValues - give arg types
+  void readAdcValues();
+..\Src\stm32_xinput\xinput.c(375): warning:  #940-D: missing return statement at end of non-void function "XINPUT_receiveXinput" 
+  }
+..\Src\stm32_xinput\xinput.c: 8 warnings, 0 errors
+compiling stm32_xinput.c...
+..\Src\stm32_xinput\stm32_xinput.h(59): warning:  #1295-D: Deprecated declaration declareButtonPins - give arg types
+  void declareButtonPins();
+..\Src\stm32_xinput\stm32_xinput.h(60): warning:  #1295-D: Deprecated declaration declareAnalogPins - give arg types
+  void declareAnalogPins();
+..\Src\stm32_xinput\stm32_xinput.h(61): warning:  #1295-D: Deprecated declaration declareEncoderPins - give arg types
+  void declareEncoderPins();
+..\Src\stm32_xinput\stm32_xinput.h(63): warning:  #1295-D: Deprecated declaration readButtons - give arg types
+  void readButtons();
+..\Src\stm32_xinput\stm32_xinput.h(64): warning:  #1295-D: Deprecated declaration updateTriggers - give arg types
+  void updateTriggers();
+..\Src\stm32_xinput\stm32_xinput.h(65): warning:  #1295-D: Deprecated declaration updateSticks - give arg types
+  void updateSticks();
+..\Src\stm32_xinput\stm32_xinput.h(66): warning:  #1295-D: Deprecated declaration readAdcValues - give arg types
+  void readAdcValues();
+..\Src\stm32_xinput\stm32_xinput.c(40): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[0].port  = 
+PIOB;		digitalArray[0].pin  = 
+PIO_PIN_7;		digitalArray[0].state  = 0;		// A
+..\Src\stm32_xinput\stm32_xinput.c(41): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[1].port  = 
+PIOB;		digitalArray[1].pin  = 
+PIO_PIN_13;		digitalArray[1].state  = 0;		// B
+..\Src\stm32_xinput\stm32_xinput.c(42): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[2].port  = 
+PIOB;		digitalArray[2].pin  = 
+PIO_PIN_14;		digitalArray[2].state  = 0;		// X
+..\Src\stm32_xinput\stm32_xinput.c(43): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[3].port  = 
+PIOB;		digitalArray[3].pin  = 
+PIO_PIN_15;		digitalArray[3].state  = 0;		// Y
+..\Src\stm32_xinput\stm32_xinput.c(44): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[4].port  = 
+PIOB;		digitalArray[4].pin  = 
+PIO_PIN_10;		digitalArray[4].state  = 0;		// LB	
+..\Src\stm32_xinput\stm32_xinput.c(45): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[5].port  = 
+PIOB;		digitalArray[5].pin  = 
+PIO_PIN_11;		digitalArray[5].state  = 0;		// RB
+..\Src\stm32_xinput\stm32_xinput.c(46): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[6].port  = 
+PIOB;		digitalArray[6].pin  = 
+PIO_PIN_5;		digitalArray[6].state  = 0;		// L3
+..\Src\stm32_xinput\stm32_xinput.c(47): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[7].port  = 
+PIOB;		digitalArray[7].pin  = 
+PIO_PIN_6;		digitalArray[7].state  = 0;		// R3
+..\Src\stm32_xinput\stm32_xinput.c(48): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[8].port  = 
+PIOB;		digitalArray[8].pin  = 
+PIO_PIN_3;		digitalArray[8].state  = 0;		// START
+..\Src\stm32_xinput\stm32_xinput.c(49): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[9].port  = 
+PIOB;		digitalArray[9].pin  = 
+PIO_PIN_4;		digitalArray[9].state  = 0;		// BACK
+..\Src\stm32_xinput\stm32_xinput.c(50): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[10].port = 
+PIOB;		digitalArray[10].pin = 
+PIO_PIN_12;		digitalArray[10].state = 0;		// XBOX-LOGO
+..\Src\stm32_xinput\stm32_xinput.c(51): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[11].port = 
+PIOA;		digitalArray[11].pin = 
+PIO_PIN_8;		digitalArray[11].state = 0;		// D-UP	
+..\Src\stm32_xinput\stm32_xinput.c(52): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[12].port = 
+PIOA;		digitalArray[12].pin = 
+PIO_PIN_9;		digitalArray[12].state = 0;		// D-DOWN
+..\Src\stm32_xinput\stm32_xinput.c(53): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[13].port = 
+PIOA;		digitalArray[13].pin = 
+PIO_PIN_10;		digitalArray[13].state = 0;		// D-LEFT
+..\Src\stm32_xinput\stm32_xinput.c(54): warning:  #188-D: enumerated type mixed with another type
+  	digitalArray[14].port = 
+PIOA;		digitalArray[14].pin = 
+PIO_PIN_15;		digitalArray[14].state = 0;		// D-RIGHT
+..\Src\stm32_xinput\stm32_xinput.c(61): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[0].port = 
+PIOA;		analogArray[1].pin = 
+PIO_PIN_0;		analogArray[1].state = 0;			// LEFT TRIGGER
+..\Src\stm32_xinput\stm32_xinput.c(62): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[1].port = 
+PIOA;		analogArray[2].pin = 
+PIO_PIN_1;		analogArray[2].state = 0;			// RIGHT TRIGGER
+..\Src\stm32_xinput\stm32_xinput.c(63): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[2].port = 
+PIOA;		analogArray[5].pin = 
+PIO_PIN_2;		analogArray[5].state = 0;			// X RIGHT STICK
+..\Src\stm32_xinput\stm32_xinput.c(64): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[3].port = 
+PIOA;		analogArray[6].pin = 
+PIO_PIN_3;		analogArray[6].state = 0;			// Y RIGHT STICK
+..\Src\stm32_xinput\stm32_xinput.c(65): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[4].port = 
+PIOA;		analogArray[3].pin = 
+PIO_PIN_4;		analogArray[3].state = 0;			// X LEFT STICK		
+..\Src\stm32_xinput\stm32_xinput.c(66): warning:  #188-D: enumerated type mixed with another type
+  	analogArray[5].port = 
+PIOA;		analogArray[4].pin = 
+PIO_PIN_5;		analogArray[4].state = 0;			// Y LEFT STICK		
+..\Src\stm32_xinput\stm32_xinput.c(74): warning:  #188-D: enumerated type mixed with another type
+  	encoderPins[0].port = 
+ULL;		encoderPins[0].pin = 
+ULL;		encoderPins[0].state = 0;			// Encoder input A - interrupt pin
+..\Src\stm32_xinput\stm32_xinput.c(75): warning:  #188-D: enumerated type mixed with another type
+  	encoderPins[1].port = 
+ULL;		encoderPins[1].pin = 
+ULL;		encoderPins[1].state = 0;			// Encoder input B - normal input
+..\Src\stm32_xinput\stm32_xinput.c: 30 warnings, 0 errors
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_ll_usb.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_pcd_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_pcd.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal.c...
+compiling system_stm32f1xx.c...
+compiling usbd_customhid.c...
+compiling usbd_ctlreq.c...
+compiling usbd_core.c...
+compiling usbd_ioreq.c...
+linking...
+Program Size: Code=14736 RO-data=464 RW-data=440 ZI-data=4512  
+"stm32_xinput\stm32_xinput.axf" - 0 Error(s), 46 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\nesvera\Desktop\STM32-XINPUT-X360\MDK-ARM\RTE\_stm32_xinput
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+Build Time Elapsed:  00:00:18
+</pre>
+</body>
+</html>
